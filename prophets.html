@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/prophets.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Latter-day Prophets</h1>
+    </header>
+    <main>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        Melinda Slaughter | 🏛 BYU-Idaho | WDD 230
+    </footer>
+    
+</body>
+<script> src='scripts/prophets.js'</script>
+<!-- <script>
+    const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const cards = document.querySelector('.cards');
+
+fetch(requestURL)  //feed the required arguments, the URL 
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const prophets = jsonObject['prophets'];
+        // console.table(jsonObject); //temporarily checking for valid response.
+        prophets.forEach(displayProphets);
+    });
+
+function displayProphets(prophet) {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let portrait = document.createElement('img');
+
+    //change the textContent property of the h2 element to contain prophet's full name
+    h2.textContent = prophet.name + ' ' + prophet.lastname;
+
+    portrait.setAttribute('src', prophet.imageurl);
+    portrait.setAttribute('alt', 'Portrait of ' + prophet.name + ' ' + prophet.lastname);
+    portrait.setAttribute('loading', 'lazy');
+
+    card.appendChild(h2);
+    card.appendChild(portrait);
+
+    document.querySelector('div.cards').appendChild(card);
+    } 
+</script> -->
+</html> 
